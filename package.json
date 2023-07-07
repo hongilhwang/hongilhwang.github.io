@@ -1,0 +1,61 @@
+{
+  "name": "Camveloper blog",
+  "private": true,
+  "description": "캠핑이 좋은 개발자 블로그입니다.",
+  "version": "0.1.0",
+  "author": "Hong Il Hwang <hongilhwang@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "dependencies": {
+    "gatsby": "^5.11.0",
+    "gatsby-plugin-google-analytics": "^5.11.0",
+    "gatsby-plugin-image": "^3.11.0",
+    "gatsby-plugin-manifest": "^5.11.0",
+    "gatsby-plugin-offline": "^6.11.0",
+    "gatsby-plugin-react-helmet": "^6.11.0",
+    "gatsby-plugin-sharp": "^5.11.0",
+    "gatsby-plugin-typography": "^5.11.0",
+    "gatsby-remark-copy-linked-files": "^6.11.0",
+    "gatsby-remark-images": "^7.11.0",
+    "gatsby-remark-prismjs": "^7.11.0",
+    "gatsby-remark-responsive-iframe": "^6.11.1",
+    "gatsby-remark-smartypants": "^6.11.0",
+    "gatsby-source-filesystem": "^5.11.0",
+    "gatsby-transformer-remark": "^6.11.0",
+    "gatsby-transformer-sharp": "^5.11.0",
+    "prismjs": "^1.29.0",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "react-typography": "^0.16.19",
+    "typeface-merriweather": "1.1.13",
+    "typeface-montserrat": "1.1.13",
+    "typography": "^0.16.21",
+    "typography-theme-wordpress-2016": "^0.16.19"
+  },
+  "devDependencies": {
+    "prettier": "3.0.0"
+  },
+  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "0BSD",
+  "main": "n/a",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+  },
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "deploy": "gatsby clean && gatsby build && gh-pages -d public -b blog",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  }
+}
