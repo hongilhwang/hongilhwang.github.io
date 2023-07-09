@@ -8,7 +8,7 @@ module.exports = {
       name: `hongil hwang`,
       summary: `캠핑을 하면서 개발을 할수는 없을까?`,
     },
-    description: `대한민국 국적의 평범한 개발자의 블로그`,
+    description: `이곳은 개인이 일주일에 한번 공부 한것을 아주 간단하게 기록 하는 곳입니다.`,
     siteUrl: `https://hongilhwang.github.io/`,
     social: {
       twitter: `hongilhwang`,
