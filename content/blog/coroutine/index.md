@@ -1,3 +1,8 @@
+---
+title: 코루틴
+date: "2023-07-09T23:08:00.000Z"
+description: 비동기 논블로킹의 기본 개념에 대해서 설명 한다.
+---
 # 코루틴
 
 React & Kotlin을 주로 사용하다 보니, 코루틴과 제너레이터 개념을 정리 할 필요가 있었다. 그래서 이번주에는 이 내용을 검색 해보며, 정리 해보았다.
@@ -16,7 +21,7 @@ React & Kotlin을 주로 사용하다 보니, 코루틴과 제너레이터 개�
 
  Javascript 에서 saga를 사용하다 보면 yield라는 키워드를 확인 할수 있다. 해당 키워드를 포함한 함수를 Generator라고 부른다.( C#, Python에도 있다고 한다.)
 
-```jsx
+```javascript
 function* foo(index) {
   while (index < 2) {
     yield index;
@@ -45,7 +50,7 @@ console.log(iterator.next().value);
 
 ## Generator
 
-```jsx
+```kotlin
 fun main() {
     println(sequence.take(7).toList()) // [0, 1, 3, 5, 8, 24, 72]
 }
@@ -67,8 +72,3 @@ val sequence = sequence {
 
  코틀린에서 `suspend` 가 붙는 함수는 코루틴을 의미 하고, 그 코루틴을 suspend 하는 지점이다. 모든 suspend 함수 호출을 따라가면 맨 아래에는 `suspendCoroutine` 이라는 low-level API 호출이 있으며, 이 함수를 호출하여 현재 코루틴의 실행을 멈춘다. 실행을 재개하는 것은 `suspendCoroutine`함수의 인자로 전달하는 콜백으로 시스템이 던져주는 `Continuation` 객체를 통해 이뤄진다. `suspendCoroutine`과 `Continuation`을 통해 suspend / resume이 가능하다.
 
-# 참고
-
-- [블로그 : 코루틴 소개](https://medium.com/@jooyunghan/%EC%BD%94%EB%A3%A8%ED%8B%B4-%EC%86%8C%EA%B0%9C-504cecc89407)
-- [나무위키 : 코루틴](https://namu.wiki/w/%EC%BD%94%EB%A3%A8%ED%8B%B4)
-- [yield - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/yield)
